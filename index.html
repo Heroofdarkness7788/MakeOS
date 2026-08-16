@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nebula OS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ BOOT SCREEN ============ -->
+  <div id="boot-screen" class="boot-screen">
+    <div class="boot-logo">🌌</div>
+    <h1 class="boot-title">NEBULA OS</h1>
+    <div class="boot-sub" id="boot-sub">starting the cosmos…</div>
+    <div class="boot-bar"><div class="boot-fill" id="boot-fill"></div></div>
+    <div class="boot-log" id="boot-log"></div>
+    <div class="boot-skip" id="boot-skip">click anywhere to skip</div>
+  </div>
+
+  <!-- ============ DESKTOP ============ -->
+  <div id="desktop">
+    <div id="wallpaper"></div>
+    <div id="stars"></div>
+    <div id="icons" class="icons"></div>
+    <div id="windows"></div>
+    <div id="snap-hint" class="snap-hint" hidden></div>
+    <div id="context-menu" class="context-menu" hidden></div>
+  </div>
+
+  <!-- ============ TASKBAR ============ -->
+  <div id="taskbar">
+    <button id="start-btn" class="start-btn" title="Start">
+      <span class="start-logo">🪐</span>
+      <span class="start-text">Start</span>
+    </button>
+    <div id="taskbar-apps" class="taskbar-apps"></div>
+    <div id="tray" class="tray">
+      <span class="tray-item" id="tray-battery" title="Battery">🔋 98%</span>
+      <button class="tray-item tray-clock" id="tray-clock" title="Nebula time">--:--</button>
+    </div>
+  </div>
+
+  <!-- ============ START MENU ============ -->
+  <div id="start-menu" class="start-menu" hidden>
+    <div class="start-menu-header">
+      <span class="start-menu-logo">🌌</span>
+      <div>
+        <div class="start-menu-name">Nebula OS</div>
+        <div class="start-menu-user">guest · no password needed    (still testing) </div>
+      </div>
+    </div>
+    <div class="start-menu-apps" id="start-menu-apps"></div>
+    <div class="start-menu-footer">
+      <button class="power-btn" id="power-btn" title="Restart Nebula OS">⏻ Restart</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
